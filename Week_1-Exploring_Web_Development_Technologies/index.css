@@ -1,0 +1,64 @@
+.overall-container{
+  max-width: 1200px;
+  max-height: 2000px;
+  margin: 0 auto;
+}
+
+html{
+  font-size: 16px; /*default font setting*/
+}
+
+body { 
+  font-family: 'Times New Roman', Times, serif;
+  background-color:lavender;
+  font-size: 1rem;
+  margin: 0 2rem 1rem 2rem;
+}
+
+
+header{ 
+  text-align: center;
+  font-size: 1.75rem;
+  color: black;
+}
+
+
+/* Top heading with portrait*/
+.top-heading{
+  display: flex;
+  justify-content: space-between; /*pushes content to end of screen*/
+  align-items: center;
+  gap: 1rem;
+  background-color:lavenderblush;
+  margin: 1rem 0.25rem 3rem 0.25rem;
+  padding: 0.5rem;
+}
+
+
+/*formats the name part of the top heading*/
+#name{
+  margin: auto 0 auto 1rem;
+}
+
+
+/* This helps the image to adapt to different screen sizes*/
+#portrait{
+  min-width:0;
+  max-width: 100%;
+}
+
+
+#portrait img{
+max-width: 100%;
+height: auto;
+}
+
+
+h2{
+  margin: 2rem 0 0 0; /*Sets a top margins for the h2 headings*/
+}
+
+
+p {
+  font-size: 1rem;
+}
