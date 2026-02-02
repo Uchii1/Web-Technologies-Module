@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<!-- indenting is 2 spaces per level-->
+<!-- Page title, icon and link to CSS file-->
+  <head> 
+    <title>Home - Navigation Menu Developers </title> 
+    <link rel="icon" type="image/x-icon" href="NavDevIcon.ico">
+    <link rel="stylesheet" href="index-wk10.css">
+
+  <!-- Setting html document language to English-->
+    <html lang = "en">
+
+  <!-- Settings for character encoding and device compatibility-->
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Webpage includes embedded media from different sources. For presentability, they are separated by a line inserted with html-->
+
+
+  </head>
+
+  <body>
+
+  <!-- HEADER -->
+    <header> 
+      <h1 id="page-heading" style="display: flex; align-items: center; justify-content: center; gap:3rem;">
+      <img src ="NavDevPNG.png" alt="logo" style="width: 7rem; height:7rem;">
+       NaVDeV 
+      </h1>
+      <h4><i>... Blazing trails in responsive and practical navigation menu design </i></h4>
+    </header>
+
+   <!-- NAVIGATION BAR -->
+    <!-- Clicking the links in the navigation bar scrolls automatically to the relevant content-->
+    <nav>
+      <div class = "navigation-bar">
+
+        <!-- A class for the navigation menu-->
+        <ul class="nav-menu">
+
+          <li class = "nav-item">
+            <a href="NMD-Home.html" class= "active">Home </a>
+          </li>
+
+          <li class="nav-item"> 
+            <a href="NMD-About.html" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+          <a href = "#our-services" class="nav-link dropdown-toggle"> Our services</a>
+          
+            <!-- a class for the drop-down menu --> 
+            <ul class="dropdown-menu">
+                <li> <a href= "#visual-design" class="dropdown-item"> Visual Design </a> </li>
+                <li> <a href= "#backend-development" class="dropdown-item"> Backend Development </a> </li>
+                <li> <a href= "#seo" class="dropdown-item"> Search Engine Optimisation </a> </li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+          
+  <!--HOME-->
+
+    <div id ="main-content">
+
+      <div class ="home">
+      <h3 align="center" style="border: 3px solid peachpuff; padding: 1rem; margin:2rem 0 2rem 0;"> 
+        Welcome to NavDev! </h3>
+        
+          <p> 
+            At NavDev, we are experts at developing tailored navigation menus for websites
+            We create menus that are tried and tested, allowing site-users to access site content seamlessly.<br>
+            We specialise in helping start-ups and SMEs to create engaging web content and implement SEO.
+          </p>
+      </div>
+
+      <!-- Our services-->
+      <div id = "our-services">
+        <h3 align="center" style="border: 3px solid peachpuff; padding: 1rem; margin:2rem 0 2rem 0;"> 
+          Our Services </h3>
+
+        <!-- VISUAL DESIGN--> 
+        <div id = "visual-design">
+          <h4> Visual Design</h4>
+            <p> Our skilled graphic designers can help to create attractive graphic designs tailored to your site's needs.
+              <br> We are experts at both AI-supported and traditional designs, 
+                  meaning we create outputs tailored to your needs and preferences
+            </p>
+        </div>
+
+        <!--BACKEND DEVELOPMENT-->
+        <div id ="backend-development">
+          <h4> Backend Development</h4>
+            <p> We have experience in creating functional and efficient backend infrastructure for websites and web applications.
+              <br>We are skilled in Python and JavaScript, and can handle complex systems for various uses, to keep your website running smoothly
+                  and reliably, so you can focus on growing your business.
+            </p>
+        </div>
+
+        <!-- SEO-->
+        <div id ="seo">
+          <h4> Search Engine Optimisation </h4>
+            <p> We are experts at SEO for SME!
+              <br>We can help to improve your search rankings, and get your website in front of customers who looking for your services
+              <br> We can increase organic traffic, reduce website bounce rate, and offer better UX, including faster load times and more mobile friendly web design.
+            </p>
+        </div>
+      </div>
+    </div>  
+
+    <!-- JavaScript included to control hyperlinks and ensure that on loading, the page returns to the top-->
+    <script>
+        if (!window.location.hash) {
+          window.location.hash = '#heading-id';
+        }
+    </script>
+
+
+  <!-- Using the hr tag to include a line before the footer -->
+  <hr style= "border: 2px solid black; margin: 3rem 0 2rem 0;">
+          <!-- The footer includes two levels of div classes, dividing it into two columns-->
+    <footer>
+      <div class="footer-whole">
+        <div class="footer-single">
+          <p>
+            <span> &copy 2026 Navigation Menu Developers Ltd </span>
+          </p>
+        </div>
+
+        <div class="footer-single">
+          <p> Webpage Designed by U.C. Obiagwu 
+            <br>For questions, comments and suggestions, contact me at:<b> CoolDesigns@gmail.com </b> 
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>

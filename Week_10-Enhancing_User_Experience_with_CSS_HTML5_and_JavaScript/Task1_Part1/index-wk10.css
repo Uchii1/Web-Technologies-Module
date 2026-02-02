@@ -1,0 +1,250 @@
+/*Setting scroll behaviour to smooth*/
+html {
+    scroll-behavior: smooth;
+    }
+
+/* With this target rule, the page deafults to the home when reloaded*/
+:target {
+    display: none;
+}
+
+/*Directs the hyperlinks to stop where the relevant section is well visible*/
+#home, #visual-design,#backend-development, #seo {
+    display: block;
+    scroll-margin-top: 7rem;  
+}
+
+/*Formats the header*/
+header{
+    margin: 1rem 0 3rem 0;
+    text-align: center;
+}
+
+/*Applies to h1 (Which is only on the top part of the page)*/
+h1 {
+    color:black;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: fantasy;
+}
+
+/* Styling for the Body part of the webpage*/
+
+body {
+    /*default font size is 16px (Based on standard practice)*/    
+    font-size: 16px;
+    margin: 1rem 2rem 3rem 2rem;  
+    font-family:Arial, Helvetica, sans-serif;
+
+    /*Background color set with a linear gradient*/
+    background: linear-gradient(200deg, cornsilk 75%,peachpuff 25%);
+    min-height: 100vh; /*Sets body to fill 100% of screen area*/
+}
+
+
+/* Navigation */
+nav {
+    background: peachpuff;
+    border-radius: 1rem;
+    position: sticky;  /*A sticky Nav bar stays on the top of the screen as the user scrolls */
+    top: 0;  /*This sets where the sticky nav bar sticks*/
+    width:100%;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+}
+
+.navigation-bar {
+    font-size: 1.5rem;
+    font-weight: 750;
+    letter-spacing: 0.05rem;
+    width:100%;
+    margin: 1rem auto; /*nav bar contents aligned to center*/
+    display: flex;
+    height: 5rem;
+    max-width: 1200px;
+}
+
+.nav-menu {
+    display: flex; /*Navigation bar items styled in a row*/
+    list-style: none; /*removes bullet points, because ul and ol are used in the nav bar*/
+    gap: 0;
+    max-width: 1200px;
+}
+
+.nav-item {
+    position: relative;
+    align-self: center;
+}
+
+/*Formats non-active links*/
+.nav-link {
+    display: block;
+    padding: 25px 20px;
+    color: black;
+    text-decoration: none;
+    transition: all 1s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover{
+    font-size: 1.75rem; /*font magnifies slightly on hover*/
+    font-weight: 1000; /*Increased font weight on hover*/
+    color:black;
+}
+
+/*formats active link*/
+.active{
+    display: block;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1250; /*Font is bolder for the link of the active page*/
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    color: azure;
+}
+
+/*formats active link on hover*/
+.active:hover{
+    font-weight: 1250;
+    font-size: 1.75rem;
+    color: azure;
+}
+
+/* Dropdown */
+.dropdown {
+    position:relative;
+}
+
+/* formats the toggle arrow in dropdown menu*/
+.dropdown-toggle::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    margin-left: 6px;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    }
+
+/*formats toggle arrow of dropdown menu on hover*/
+
+.dropdown:hover .dropdown-toggle::after {
+    /*Here the arrow will point downwards, towards the items*/
+    transition: transform 0.5s;
+    transform: rotate(45deg); 
+    }
+
+/*formats the full dropdown menu*/
+.dropdown-menu {
+    position: absolute;
+    font-size: 1.25rem;
+    top: 100%;
+    background: whitesmoke; /*color of dropdown menu*/
+    border-radius: 1rem;
+    margin-bottom: 10rem;
+    min-width: 1rem;
+    list-style: none; /*No bullet points in list*/
+    opacity: 0;
+    transform: translateY(-10px); /*Movement on clickin*/
+    transition: all 0.3s ease;
+    padding-left: 0;
+}
+
+/*Formats the full dropdown menu when the user hovers over the menu heading*/
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*Formats the dropdown items when the user views the dropdown menu*/
+.dropdown-item {
+    display: block;
+    margin: 0;
+    border: 2rem 2rem;
+    padding: 1.5rem 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 1.15rem;
+}
+
+/* Formats the dropdown items when the user hovers over an item */
+.dropdown-item:hover {
+    font-weight: 1000; /*Increased font weight on hover from 750 to 1000*/
+    font-size: 1.25rem; /*slightly larger than 1.15rem*/
+    color: black;
+    background-color: rgb(244, 217, 195); /*darker version of peachpuff used on hover*/
+}
+
+
+/* this makes the nav bar Responsive to screen sizes */
+/* Mobile first - base styles */
+.navigation-bar {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-menu {
+    flex-direction: row;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .navigation-bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 1200px) {
+    .nav-menu {
+        gap: 3rem;
+    }
+}
+    
+
+/* Content Sections */
+#main-content{
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+}
+
+/* This targets the sections within our-services on the About page */
+#our-services div{  
+    margin: 4rem auto;
+}
+
+
+/* The below applies to both h2 and p*/
+h2, p {
+    color: black;
+    line-height: 1.6; /*spacing between lines of text*/
+    font-size: 16px;
+    margin: 2rem 0;
+}
+
+/* Stylings for the footer*/
+.footer-whole{
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    display: flex;  
+    gap: 1rem;
+}
+
+.footer-single{
+    flex: 1;
+}
+    
+
