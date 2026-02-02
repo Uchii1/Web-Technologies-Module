@@ -12,7 +12,7 @@ Completed Task: WordPress Website
 I have created a WordPress blogpost using a plug in to include a ‘Contact Us’ form within the post. 
 WordPress Link: https://projectdynamicdotblog.wordpress.com/2026/01/31/study-tips/ 
 
-
+## Task 2
 (Task 2 has been completed in the submitted document for this assessment)
 
 
