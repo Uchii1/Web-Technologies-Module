@@ -1,2 +1,3 @@
-# Web-Project-1
-This is a simple web project
+# Web-Technologies Module
+Repository to store assessment work for my web technologies module
+
