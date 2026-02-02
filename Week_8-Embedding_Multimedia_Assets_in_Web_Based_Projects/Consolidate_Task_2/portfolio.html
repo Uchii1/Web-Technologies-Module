@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- Page title, icon and link to CSS file-->
+  <head> 
+    <title> Portfolio </title> 
+    <link rel="icon" type="image/jpeg" href="PortfolioIcon.jpg">
+    <link rel="stylesheet" href="index-wk8.css">
+
+    <!-- Setting html document language to English-->
+    <html lang = "en">
+
+    <!-- Settings for character encoding and device compatibility-->
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header><h1> Multimedia Portfolio </h1></header>
+
+    <!-- NAVIGATION BAR -->
+    <!-- Clicking the links in the navigation bar scrolls automatically to the relevant content-->
+    <nav>
+      <a href="#video">Video</a>
+      <a href="#audio">Audio</a>
+      <a href="#gallery">Image Gallery</a>
+      <a href="#animation">Animation</a>
+    </nav>
+
+    <!-- The main-content div class will allow margins and formatting of content below the navigation bar-->
+    <div class="main-content">
+
+      <!-- TASK: Header - Display your name and a brief introduction.-->
+      <h2> Introduction </h2> 
+      <p> My name is Uchechi. <br>
+          This is a webpage with multimedia files showcasing some of my hobbies and projects from
+          the past few years. 
+      </p>
+
+              
+      <!-- VIDEO SECTION-->
+      <!-- TASK: Embed a video showcasing a skill or project using the <video> element. -->   
+      <div class="video">
+        <h2 id="video"> Video </h2>
+        <p> Video demonstrating a short Turtle animation written in Python </p>
+      <!-- Video content here -->
+        <video controls style="width: 1280px; height: 720px;"> <!--Within the CSS file, max weidth is 1280px-->
+          <source src="week8-WT-TkinterVideo.mp4" type="video/mp4">
+          Your browser does not support the video tag. <!-- This prints when the video is not supported-->
+        </video> 
+      </div>
+
+
+      <!-- AUDIIO SECTION-->
+      <!--TASK: Embed an audio clip introducing yourself using the <audio> element. -->
+      <div class="audio">
+        <h2 id="audio"> Audio </h2>
+        <!-- Audio content here -->
+        <p> Here is an audio clip in which I introduce myself. </p>
+
+
+        <h3> Brief Introduction  </h3>
+        <audio controls>
+          <source src="SelfIntroduction.mp3" type="audio/mpeg">
+          Your browser does not support the audio element. <!--Displayed if the browser does not support the audio-->
+        </audio>
+      </div>
+
+      <!-- IMAGE GALLERY-->
+      <!--TASK: Display a collection of images related to your projects using <img> elements -->
+      <div class="gallery">
+        <h2 id="gallery" > Image Gallery </h2>
+
+        <!-- Image content here -->
+        <p> A selection of screenshots from various projects I have completed. </p>
+
+        <!--Note: In the below, the alt text displays if the image fails to load, and is also useful for SEO purposes-->
+        <p> <img src="RecruitmentProfile.jpg" width="900px" height="600px" alt="Recruitment Profile" style="margin-top:20px;"> <br> 
+        <b> Img 1: </b> A Simple Recruitment Profile </p>
+
+        <p> <img src="Week5Task.jpg" width="900px" height="600px" alt="Simple Website Home Page for an Organisation" style="margin-top: 20px;"> <br> 
+        <b> Img 2:</b> Website Home Page for a Fictional Organisation </p>
+
+        <p> <img src="Calculator.jpg" width="900px" height="600px" alt="Calculator Website" style="margin-top: 20px;"> <br> 
+        <b> Img 3: </b> Website with Simple Arithmetic and Quadratic Calculator Function </p>
+
+        <p> <img src="CalculatorDemonstration.jpg" width="900px" height="600px" alt="Calculator Website Showing Results" style="margin-top: 20px;"> <br> 
+        <b> Img 4: </b> Calculator Website in Use </p>
+      </div>
+
+
+      <!-- ANIMATION SECTION-->
+      <!--TASK: Create a simple CSS animation to highlight a key skill. -->
+      <div class="animation">
+        <h2 id="animation"> Animation </h2>
+
+      <!-- Animation content here-->
+        <p> Here is an animation of a moving square, styled with CSS, which I learnt recently </p>
+        <!--The square is styled in the linked CSS file-->
+        <div class="square"></div> 
+      </div>
+      
+    </div>
+    <hr style= "border: 2px solid black">
+    <p> Webpage Designed by U.C. Obiagwu <br>
+    For questions, comments and suggestions, contact: <b> CoolDesigns@gmail.com </b> 
+  </p>
+  
+  </body>
+</html>
