@@ -81,7 +81,7 @@ nav a:hover {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Video section styling */
+/* Video section styling - also used in introduction section */
 .video {
     max-width: 1280px;
     margin: 0 auto 50px auto;
@@ -140,3 +140,4 @@ nav a:hover {
   50% { left: 50%; top: 10px; }
   100% { left: calc(100% - 50px); top: 0; }
 }
+
